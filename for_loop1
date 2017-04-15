@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#reading values from a file
+
+
+# change separator
+IFS=$'\n'
+
+file="states"
+for a_state in $(cat $file); do
+  echo "Visit beautiful $a_state"
+done
